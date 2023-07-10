@@ -15,7 +15,7 @@ public class Database {
     // has been waiting for the lock's release
     public static Database getInstance() {
         if (instance == null) {
-            synchronized (Singleton.class) {
+            synchronized (Database.class) {
                 instance = new Database();
                 System.out.println("Instance created....");
             }
